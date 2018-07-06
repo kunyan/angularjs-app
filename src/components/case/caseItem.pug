@@ -1,0 +1,19 @@
+.list-view-pf-checkbox
+    input(type="checkbox")
+a(href="/#/case/{{$ctrl.kase.id}}").list-view-pf-main-info
+    .list-view-pf-left
+        span.fa.fa-plane.list-view-pf-icon-sm
+    .list-view-pf-body
+        .list-view-pf-description
+            .list-group-item-heading 
+                h1 {{$ctrl.kase.id}}
+            .list-group-item-text {{$ctrl.kase.summary}}
+        .list-view-pf-additional-info
+            .list-view-pf-additional-info-item
+                span.pficon.pficon-screen
+                strong 8
+                | Hosts
+            .list-view-pf-additional-info-item
+                span.pficon.pficon-cluster
+                strong 6
+                | Cluster
